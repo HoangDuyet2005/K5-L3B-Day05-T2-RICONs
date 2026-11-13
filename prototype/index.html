@@ -130,20 +130,17 @@ function k5(){
 
 function k8(){
  let h=`<div class="ts">22:50</div><div class="me">22h50 rồi, em chỉ cần anh xác nhận thôi: bài 3 em ra trung bình 15,25, trung vị 11,5, câu b chọn trung vị. Đúng ko ạ? Đúng thì em nộp luôn.</div>
- <div class="ai"><div class="h">Trợ lý AI · dựa vào Trang khoá học · Bài tập 3, ${sec('3.1')} ${sec('3.2')}</div>
+ <div class="ai"><div class="h">Trợ lý AI · dựa vào Trang khoá học · Bài tập 3, ${sec('3.2')}</div>
   <span class="chip c-info">Bài tập 3 · đang mở · hạn 23:59 13/11</span>
   <p>Bài tập 3 còn mở tới 23:59 hôm nay (theo trang khoá học), nên mình không nói đáp số của bạn đúng hay sai. <span class="n">3</span>Câu này mình trả lời giống hệt nhau với mọi bạn, dù đáp số đúng hay sai — vì chỉ cần mình đổi giọng là đã lộ đáp án.</p>
-  <p>Bạn tự kiểm được trong vài phút:</p>
-  <ol><li>${sec('3.1')} Bạn đã cộng đủ 8 giá trị và chia cho đúng số giá trị chưa?</li>
-  <li>${sec('3.2')} Dãy đã sắp tăng dần chưa? Dãy có 8 giá trị (số chẵn) thì §3.2 nói lấy trung vị thế nào?</li>
-  <li>Câu (b) là nhận xét của bạn — mình không viết hay chấm hộ.</li></ol>
-  <p>Kiểm xong thấy hợp lý thì nộp theo cách bạn hiểu. Khi bài hết hạn và có đáp án công bố, mình giải thích đầy đủ được.</p>
+  <p>Nếu muốn tự làm lại, bạn bắt đầu từ ${sec('3.2')}: sắp dãy lương theo thứ tự tăng dần, rồi tự làm tiếp từ đó. Câu (b) là nhận xét của bạn — mình không viết hay chấm hộ.</p>
+  <p>Thấy hợp lý thì nộp theo cách bạn hiểu. Khi bài hết hạn và có đáp án công bố, mình giải thích đầy đủ được.</p>
   <div class="small">Không có nút “xác nhận đáp số”: việc này trợ lý không làm khi bài đang mở.</div>`;
  h+= S.fwd43
   ? `<div class="card k-ok"><b>✓ Đã chuyển cho TA</b> · phiếu TA-0143. TA đọc từ <b>08:00 14/11 — sau hạn nộp</b>, nên đừng chờ câu trả lời này để nộp bài.<div class="btns"><button class="btn" onclick="set('fwd43',false)">Rút lại</button></div></div>`
   : '';
  h+=`<div class="btns"><button class="btn" onclick="openSec('3.2')">Mở §3.2</button>${S.insist?'':`<button class="btn" onclick="set('insist',true)">Em vẫn muốn biết đúng hay sai</button>`}${S.fwd43?'':`<button class="btn out" onclick="set('fwd43',true)">Hỏi TA · TA đọc từ 08:00 14/11, sau hạn</button>`}</div></div>`;
- if(S.insist) h+=`<div class="me">Em vẫn muốn biết đúng hay sai thôi ạ.</div><div class="ai"><div class="h">Trợ lý AI</div>Mình hiểu bạn muốn chắc trước khi nộp. Nhưng trước 23:59 mình không nói đúng hay sai — với mọi bạn đều vậy. Ba bước kiểm ở trên là cách nhanh nhất để bạn tự chắc.</div>`;
+ if(S.insist) h+=`<div class="me">Em vẫn muốn biết đúng hay sai thôi ạ.</div><div class="ai"><div class="h">Trợ lý AI</div>Mình hiểu bạn muốn chắc trước khi nộp. Nhưng trước 23:59 mình không nói đúng hay sai — với mọi bạn đều vậy. Làm lại từ bước sắp xếp ở §3.2 là cách nhanh nhất để bạn tự chắc.</div>`;
  return h;
 }
 
@@ -187,7 +184,7 @@ function ta(){
  }
  if(S.fwd43) h+=`<div class="q lo"><div class="t"><b>TA-0143 · Xin xác nhận đáp số Bài tập 3</b><span class="chip c-info">Thấp · bài đã hết hạn 23:59 13/11</span></div>
   <dl><dt>Học viên hỏi</dt><dd>22:50 13/11 — xin xác nhận trung bình, trung vị và câu (b).</dd>
-  <dt>Trợ lý đã nói</dt><dd>Không xác nhận, không phủ nhận (câu trả lời cố định); đưa 3 bước tự kiểm theo §3.1, §3.2.</dd>
+  <dt>Trợ lý đã nói</dt><dd>Không xác nhận, không phủ nhận (câu trả lời cố định); chỉ một gợi ý bước đầu (§3.2: sắp dãy tăng dần).</dd>
   <dt>Gợi ý cho TA</dt><dd>Bài đã hết hạn: giải thích đầy đủ khi đáp án được công bố.</dd></dl>
   ${S.ta43?`<div class="status">${S.ta43}</div>`:`<div class="btns"><button class="btn" onclick="set('ta43','✓ Đã trả lời học viên.')">Trả lời học viên</button></div>`}</div>`;
  if(!S.flag42&&!S.faq&&!S.fwd43) h+=`<div class="q lo">Không có phiếu nào. (Học viên đã rút lại mọi câu chuyển.)</div>`;
