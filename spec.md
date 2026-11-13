@@ -7,6 +7,7 @@
 | --------------- | ----------- | --------------------------------------------------------------------- |
 | Hoàng Thế Duyệt | 2A202603980 | Làm toàn bộ: §1–§7 và prototype (`prototype/index.html`, ảnh đánh số) |
 
+
 ## §1. Lát cắt &amp; phạm vi
 
 **Lát cắt (chép từ track T2).** Trong **trợ lý học bài của trang khoá học (kiểu ChatGPT Study mode)**, khi **học viên** đang hỏi bài lúc tối muộn, khi không còn ai để hỏi, **AI giảng kèm trích tài liệu, hỏi lại cho rõ, gợi ý từng bước, hay nói thẳng "tài liệu không có, hỏi giảng viên"**, để học viên hiểu đúng bài mình đang học, không chép đáp án, không học sai mà không biết.
@@ -358,14 +359,3 @@ Cả hai câu đều hiện trên prototype, ở ô "Lời hứa với học vi�
 4. Prototype dùng câu viết sẵn. T1 mới đạt trên kịch bản dựng, **chưa đo với model thật**.
 
 ## §7. Demo
-
-*Phần này điền sau buổi demo; không ghi trước kết quả demo.*
-
-- **Kế hoạch trình bày** (bài cá nhân, một người trình bày hết):
-  1. 30 giây đầu: lát cắt (§1) và lỗi đắt nhất. Học viên 22:41 hỏi một câu mà chính tài liệu §3.3 viết sai (K5).
-  2. Bấm prototype: K5 → K8 → Màn TA, theo "Đường bấm ca khó" ở §5.
-  3. Một mức tự chủ và cái giá khi sai: `dang_FAQ` cần TA duyệt, vì sai thì cả lớp đọc.
-  4. Trả lời ca lạ theo mức ở §4.
-- **Ca lạ nhận được ở demo:** *(điền: ai đưa, tin nhắn nguyên văn)*
-- **Prototype đã làm gì / tôi nói sẽ làm gì:** *(điền; trỏ về mức tự chủ ở §4)*
-- **Có đổi ý gì sau ca đó không:** *(điền)*
