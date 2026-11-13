@@ -1,4 +1,4 @@
-# Bài nộp LAB5 — [Track] · Nhóm [tên]
+# Bài nộp LAB5 — T2 · Nhóm RICONs
 [Danh sách thành viên và việc mỗi người làm — copy bảng từ README]
 
 ## §1. Lát cắt & phạm vi
